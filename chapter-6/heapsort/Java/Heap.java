@@ -18,7 +18,6 @@ public class Heap {
     }
 
     public void maxHeapify(int i) {
-        System.out.println("heapifying: " + i);
         int left = this.getLeftIndex(i);
         int right = this.getRightIndex(i);
 
@@ -38,11 +37,9 @@ public class Heap {
             this.maxHeapify(largest);
         }
 
-        System.out.println(this.toString());
     }
 
     public void swap(int i, int j) {
-        System.out.println("swapping: " + i + ", " + j);
         int temp = this.array[i];
         this.array[i] = this.array[j];
         this.array[j] = temp;
