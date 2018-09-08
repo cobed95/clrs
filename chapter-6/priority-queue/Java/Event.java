@@ -4,4 +4,8 @@ public class Event {
     public Event(int key) {
         this.key = key;
     }
+
+    public String toString() {
+        return "key: " + key;
+    }
 }
